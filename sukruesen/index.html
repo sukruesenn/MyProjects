@@ -17,7 +17,7 @@
 			<div>
 				<h1 class="logo">sukru<span>esen</span></h1>
 			</div>
-			<div class="links">
+			<div class="links" id="links">
 				<a href="#home">home</a>
 				<a href="#about">about</a>
 				<a href="#services">services</a>
@@ -31,7 +31,7 @@
 			<div class="circle-blue">
 				<h3>Hello,</h3>
 			</div>
-			<h1>Sukru Esen is a <br> Jr. Front-End Developer</h1>
+			<h1>Sukru Esen is a <br> <span class="auto-text"></span></h1>
 			<button class="primary-btn">My Portfolio</button>
 			<button class="secondary-btn">Read More</button>
 		</div>
@@ -39,7 +39,7 @@
 		<div class="social-media">
 			<a href="#" class="fab fa-facebook"></a>
 			<a href="#" class="fab fa-twitter"></a>
-			<a href="#" class="fab fa-instagram"></a>
+			<a href="https://instagram.com/sukruesenn_/" target="_blank" class="fab fa-instagram"></a>
 			<div class="line"></div>
 			<p>Follow Me</p>
 		</div>
@@ -204,7 +204,6 @@
 	<footer>
 		<h3>&copy Esen Design 2022</h3>
 	</footer>
-
 <!-- Footer Ends -->
 
 
@@ -235,6 +234,16 @@
 			},
 		}
 	})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script type="text/javascript">
+	var typed = new Typed('.auto-text', {
+		strings: ["Jr. Front-End Developer", "Web Developer", "UI/UX Designer"],
+		typeSpeed: 80,
+		backSpeed: 40,
+		loop: true
+
+	})	
 </script>
 </body>
 </html>
