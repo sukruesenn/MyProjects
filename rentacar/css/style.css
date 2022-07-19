@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root{
+    --dark-gray: #0E0E0E;
+    --light-gray: #A2A2A2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    border: none; outline: none;
+    transition: .3s;
+}
+::selection{
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+::-moz-selection{
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+::-webkit-scrollbar{
+    width: .8rem;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-gray);
+}
+
+/* Header Queries */
+header{
+    padding: 3% 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0; top: 0; right: 0;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background-color: #fff;
+    height: 8rem;
+    z-index: 1000;
+}
+header .logo{
+    cursor: pointer;
+    font-size: 2.4rem;
+}
+header nav a{
+    position: relative;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 700;
+    margin-left: 2.2rem;
+}
+header nav .links::before{
+    content: '';
+    position: absolute;
+    right: 0%; left: 50%; bottom: -.5rem;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: .2rem;
+    background-color: #000;
+    transition: .2s;
+}
+header nav .links:hover::before{
+    width: 100%;
+}
+.apple-btn{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    margin-left: 4rem;
+}
+.apple-btn i{
+    margin-right: 1rem;
+}
+.apple-btn:hover{
+    transform: scale(1.1);
+}
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+}
+.fa-times{
+    transform: rotate(180deg);
+}
+section{
+    padding: 3rem 9%;
+}
+
+/* Home Section Queries */
+.mobile-car-photo{
+    display: none;
+}
+.home{
+    display: flex;
+    margin-top: 10rem;
+    align-items: flex-end;
+    gap: 1.5rem;
+    padding: 3rem 0 3rem 9%;
+}
+.home .information-text{
+    flex: 1 1 40rem;
+    padding-top: 8rem;
+}
+.home .information-text h1{
+    font-size: 7.5rem;
+    font-weight: 900;
+    line-height: 7rem;
+    margin: -6rem 0 3rem 0;
+}
+.home .information-text p{
+    font-size: 2.1rem;
+    width: 70%;
+}
+.home .car-photo{
+    flex: 1 1 40rem;
+}
+.home .car-photo img{
+    width: 100%;
+    position: relative;
+    top: 5rem;
+}
+
+/* Car Logos Queries */
+.car-logos{
+    padding: 12rem 9%;
+}
+.car-logos .logos .logo{
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+.car-logos .logos .logo img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    filter: saturate(10%);
+    -webkit-filter: saturate(10%);
+    opacity: .5;
+    cursor: pointer;
+}
+.car-logos .logos .logo img:hover{
+    filter: saturate(100%);
+    -webkit-filter: saturate(100%);
+    opacity: 1;
+}
+.owl-nav .owl-next i,
+.owl-nav .owl-prev i{
+    font-size: 2rem;
+    background-color: #000;
+    color: #fff;
+    padding: .6rem;
+}
+
+/* About Section Queries */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.about .app-photos{
+    display: flex;
+    flex: 1 1 40rem;
+}
+.about .app-photos img{
+    width: 90%;
+}
+.about .information-text{
+    flex: 1 1 40rem;
+}
+.about .information-text h4{
+    color: var(--light-gray);
+    letter-spacing: .2rem;
+}
+.about .information-text h1{
+    margin: -1.2rem 0 1.5rem 0;
+    font-size: 5.5rem;
+    font-weight: 800;
+}
+.about .information-text p{
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.about .apple-btn{
+    margin: 1.5rem 0 0 0;
+    padding: 1.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1035px){
+    .home .information-text h1{
+        font-size: 6.5rem;
+    }
+    .car-logos{
+        padding: 8rem 9%;
+    }
+    .car-logos .logos .logo{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    #menu-btn{
+        display: block;
+    }
+    header .navbar{
+        background-color: #fff;
+        z-index: 1000;
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        padding: 2rem 2rem 0 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.nav-toggle{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header nav a{
+        display: block;
+        margin: 3rem 7%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    header nav .apple-btn{
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        float: center;
+        display: block;
+        text-align: center;
+    }
+    header nav .apple-btn:hover{
+        transform: scale(1.05);
+    }
+    header nav .links::before{
+        height: .2rem;
+        top: 100%;
+        right: 0; left: 50%; bottom: -1rem;
+        transform: translate(-50%, -50%);
+    }
+    header nav .links:hover::before{
+        width: 10%;
+    }
+    .home .information-text h1{
+        font-size: 6.5rem;
+    }
+}
+@media (max-width: 850px){
+    .home .information-text h1{
+        font-size: 6rem;
+        margin: -6rem 0 1rem 0;
+    }
+    .home .information-text p{
+        font-size: 1.7rem;
+    }
+    .home .car-photo img{
+        top: 0;
+    }
+    .car-logos{
+        padding: 7rem 9%;
+    }
+    .about{
+        gap: 4rem;
+    }
+    .about .app-photos{
+        position: relative;
+        right: 2rem;
+    }
+    .about .app-photos img{
+        width: 110%;
+    }
+    .about .information-text{
+        position: relative;
+        left: 2rem;
+    }
+    .about .information-text p{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 800px){
+    .about .information-text h1{
+        margin: -1.2rem 0 1.5rem 0;
+        font-size: 5rem;
+        font-weight: 800;
+    }
+    .about .information-text p{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px){
+    .home .information-text h1{
+        font-size: 5.5rem;
+    }
+    section{
+        padding: 3rem 3%;
+    }
+    header{
+        padding: 3% 3%;
+    }
+    .home{
+        padding: 3rem 0 3rem 3%;
+    }
+}
+@media (max-width: 678px){
+    .home{
+        flex-wrap: wrap;
+    }
+    .home .information-text{
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .home .information-text p{
+        margin: 0 auto 5rem auto;
+        width: 70%;
+    }
+    .home .car-photo .pc-car-photo{
+        display: none;
+    }
+    .home .car-photo .mobile-car-photo{
+        display: block;
+    }
+    .home .car-photo .mobile-car-photo{
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    .car-logos{
+        padding: 7rem 9%;
+    }
+    .about{
+        flex-wrap: wrap;
+    }
+    .about .app-photos{
+        right: 0;
+    }
+    .about .app-photos img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about .information-text{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+    }
+    .about .information-text p{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px){
+    .home .information-text p,
+    .about .information-text p{
+        width: 90%;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .about .apple-btn{
+        padding: 1.8rem 2.3rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px){
+    .car-logos .logos .logo img{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .about .app-photos img{
+        width: 100%;
+    }
+    .home .information-text p,
+    .about .information-text p{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .about .information-text{
+        left: 0;
+    }
+}
+@media (max-width: 300px){
+    html{
+        font-size: 43.5%;
+    }
+    .home .information-text 
+}

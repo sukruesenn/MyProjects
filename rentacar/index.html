@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Premium Rent Car</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+    <body>
+        <header>
+            <h1 class="logo"><i class="fa-solid fa-car"></i> EsenDesign</h1>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <nav class="navbar">
+                <a href="#about" class="links">About Us</a>
+                <a href="#cars" class="links">Cars</a>
+                <a href="#features" class="links">Features</a>
+                <a href="#contact" class="links">Help</a>
+                <a href="#" class="apple-btn"><i class="fa-brands fa-apple"></i>Download App</a>
+            </nav>
+        </header>
+        
+        <section class="home">
+            <div class="information-text">
+                <h1>Premium<br> Car Rental<br> in New York</h1>
+                <p>Don't deny yourself the pleasure of driving the best premium cars from around the world here and now.</p>
+            </div>
+            <div class="car-photo">
+                <img src="images/porsche_side_view2.png" class="pc-car-photo">
+                <img src="images/porsche_side_view1.png" class="mobile-car-photo">
+            </div>
+        </section>
+        
+        <section class="car-logos">
+            <div class="logos owl-carousel owl-theme">
+                <div class="logo">
+                    <img src="images/logos/lamborghini_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/bmw_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/hyundai_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/tesla_logo.png">
+                </div>
+                <div class="logo porsche">
+                    <img src="images/logos/porsche_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/mercedes_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/lexus_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/ferrari_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/honda_logo.png">
+                </div>
+                <div class="logo">
+                    <img src="images/logos/toyota_logo.png">
+                </div>
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="app-photos">
+                <img class="app-photo-1"  src="images/app-img.png">
+            </div>
+            <div class="information-text">
+                <h4>CONVENIENT INTERACTION</h4>
+                <h1>Modern App</h1>
+                <p>We developed a simple and functional app. It is built in such a way as to simplify the problem of the car selection and rental process. View the location, statement and other information about each of the vehicles in one click.</p>
+                <a href="#" class="apple-btn"><i class="fa-brands fa-apple"></i>Download App</a>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+        
+        <script>
+            const previcon = '<i class=" fa-solid fa-arrow-left"></i>';
+            const nexticon = '<i class="fa-solid fa-arrow-right"></i>';
+            
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 20,
+                nav: true,
+                dots: false,
+                navText: [previcon, nexticon],
+                responsive:{
+                    0:{
+                        items: 4
+                    },
+                    380:{
+                        items: 5
+                    },
+                    600:{
+                        items: 7
+                    },
+                    1000:{
+                        items: 9
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
