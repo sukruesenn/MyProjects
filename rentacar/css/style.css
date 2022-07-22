@@ -2,6 +2,9 @@
 :root{
     --dark-gray: #0E0E0E;
     --light-gray: #A2A2A2;
+    --light-blue: #DCECFF;
+    --white1: #F3F3F3;
+    --green: #4CAF50;
 }
 *{
     margin: 0;
@@ -168,6 +171,7 @@ section{
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding-bottom: 1rem;
 }
 .about .app-photos{
     display: flex;
@@ -198,12 +202,277 @@ section{
     font-weight: 600;
     font-size: 1.3rem;
 }
+.about .apple-btn{
+    
+}
 
+/* Car Photos Section */
+.cars{
+    padding: 9% 9% 5% 9%;
+}
+.cars .texts{
+    text-align: center;
+}
+.cars .texts h4{
+    color: var(--light-gray);
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+}
+.cars .texts h1{
+    font-size: 6rem;
+    font-weight: 900;
+    margin-top: -1rem;
+}
+.cars .texts p{
+    font-size: 1.7rem;
+    width: 60%;
+    letter-spacing: .1rem;
+    margin: 0 auto 2rem auto;
+}
+.cars .texts .selected{
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    padding: .8rem 2rem;
+    border-radius: 3rem;
+    margin-left: 1.8rem;
+}
+.cars .texts .selected:hover{
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+.cars .texts .not-selected{
+    font-size: 1.2rem;
+    background-color: #ddd;
+    color: #000;
+    padding: .8rem 2rem;
+    border-radius: 3rem;
+    margin-left: 1.8rem;
+}
+.cars .texts .not-selected:hover{
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+.cars .car-photos{
+    margin-top: 4rem;
+    display: flex;
+}
+.cars .car-photos img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.cars .show-more{
+    text-align: center;
+    margin-top: 3rem;
+}
+.cars .show-more-btn{
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #eee;
+    padding: .6rem 1.2rem;
+    border-radius: .8rem;
+}
+.cars .show-more-btn i{
+    margin-left: .5rem;
+}
+.cars .show-more-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
 
+/* Features Section */
+.features .texts h1{
+    font-size: 6rem;
+    font-weight: 900;
+    margin-top: -1rem;
+}
+.features .texts h4{
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: var(--light-gray);
+}
+.features .texts p{
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    width: 60%;
+}
+.features .features-list{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features .features-list .item{
+    background-color: #EFEFEF;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    flex-basis: 20%;
+    height: 18rem;
+    gap: 2rem;
+    transition: .3s;
+}
+.features .features-list .item:hover{
+    background-color: #000;
+}
+.features .features-list .item:hover > *{
+    color: #fff;
+    transition: .1s;
+}
+.features .features-list .item .item-bg{
+    width: 10rem;
+}
+.features .features-list .item .item-bg img{
+    width: 50%;
+    background-color: var(--white1);
+    border-radius: 50%;
+    padding: .8rem;
+}
+.features .information h3{
+    padding: 6rem .8rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
 
+/* Contact Section Queries */
+.contact{
+    padding: 8rem 9% 8rem 9%;
+    position: relative;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 50%;
+    z-index: -100;
+}
+.contact .container{
+    text-align: center;
+    background-color: #F4F4F4;
+    border-radius: .3rem;
+    padding: 2rem;
+}
+.contact .container h1{
+    font-size: 6rem;
+    font-weight: 800;
+}
+.contact .container p{
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    width: 60%;
+    margin: 0 auto;
+}
+.contact .container form label{
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: none;
+}
+.contact .container form input[type=text],
+.contact .container form input[type=email],
+.contact .container form textarea{
+    width: 100%;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: .1rem solid #ccc;
+    margin: 2rem 0;
+}
+.contact .container form textarea{
+    resize: vertical;
+    height: 14rem;
+}
+.contact .container form .submit-btn{
+    background-color: var(--green);
+    color: #fff;
+    padding: 1rem 5rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.contact .container form .submit-btn:hover{
+    background-color: #000;
+    transform: scale(.9);
+}
 
-
-
+/* Footer Queries */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    position: relative;
+    padding: 2rem 9%;
+}
+footer .lists{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+footer a{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+footer .list-1{
+    display: flex;
+    gap: 3rem;
+    align-items: flex-end;
+}
+footer .list-2{
+    display: flex;
+    flex-direction: column;
+}
+footer .list-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .list-3 h2{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: .8rem;
+}
+footer .list-3 .subscribe{
+    position: relative;
+    width: 32rem;
+    display: block;
+    z-index: 2;
+}
+footer .list-3 .subscribe i{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+footer .list-3 .subscribe input{
+    background-color: #eee;
+    border-radius: 1rem;
+    line-height: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-weight: 500;
+    z-index: 1;
+}
+footer .list-3 .subscribe input::placeholder{
+    color: #ccc;
+}
+footer .list-3 .footer-logo{
+    cursor: pointer;
+}
+footer .list-3 .footer-logo h1{
+    color: #fff;
+}
 
 
 
@@ -228,10 +497,21 @@ section{
         margin-bottom: 0;
     }
 }
-
+@media (max-width: 1024px){
+    .features .information h3{
+        padding: 4rem .8rem;
+        font-size: 1.5rem;
+    }
+    footer .lists{
+        flex-basis: 48%;
+    }
+}
 @media (max-width: 991px){
     html{
         font-size: 55%;
+    }
+    .features .information h3{
+        padding: 6rem .8rem;
     }
     #menu-btn{
         display: block;
@@ -276,6 +556,12 @@ section{
         font-size: 6.5rem;
     }
 }
+@media (max-width: 890px){
+    .features .information h3{
+        font-size: 1.5rem;
+        padding: 4rem .5rem;
+    }
+}
 @media (max-width: 850px){
     .home .information-text h1{
         font-size: 6rem;
@@ -304,7 +590,9 @@ section{
         position: relative;
         left: 2rem;
     }
-    .about .information-text p{
+    .about .information-text p,
+    .cars .texts p,
+    .features .texts p{
         font-size: 1.7rem;
     }
 }
@@ -314,7 +602,12 @@ section{
         font-size: 5rem;
         font-weight: 800;
     }
-    .about .information-text p{
+    .features .texts h1{
+        font-size: 5rem;
+    }
+    .about .information-text p,
+    .cars .texts p,
+    .features .texts p{
         font-size: 1.5rem;
     }
 }
@@ -330,6 +623,39 @@ section{
     }
     .home{
         padding: 3rem 0 3rem 3%;
+    }
+    .cars .show-more-btn{
+        font-size: 1.6rem;
+    }
+    .features .texts{
+        text-align: center;
+    }
+    .features .texts p{
+        margin: 0 auto;
+    }
+    .features .features-list{
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .features .features-list .item .information{
+        width: 100%;
+    }
+    .features .features-list .item{
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    .features .features-list .item .item-bg img{
+        width: 65%;
+    }
+    .features .item .information h3{
+        padding: 4rem .8rem 1.2rem .8rem;
+        font-size: 2rem;
+    }
+    footer{
+        padding: 2rem 3%;
+    }
+    footer .lists{
+        flex-basis: 45%;
     }
 }
 @media (max-width: 678px){
@@ -377,11 +703,39 @@ section{
         width: 70%;
         margin: 0 auto;
     }
+    .cars .texts p{
+        width: 80%;
+    }
+    .cars .texts h1{
+        font-size: 5rem;
+    }
+    .features{
+        padding-top: 5rem;
+    }
+    footer{
+        padding: 2rem 9%;
+    }
+    footer .lists .list-1{
+        align-items: flex-start;
+        gap: 0;
+        flex-direction: column;
+    }
+    footer .lists{
+        flex-direction: column;
+    }
 }
 @media (max-width: 500px){
     .home .information-text p,
-    .about .information-text p{
+    .about .information-text p,
+    .cars .texts p{
         width: 90%;
+    }
+    .cars .texts h1{
+        font-size: 4.5rem;
+    }
+    .cars .texts .selected,
+    .cars .texts .not-selected{
+        margin-left: 1.5rem;
     }
 }
 @media (max-width: 450px){
@@ -393,8 +747,47 @@ section{
         font-weight: 600;
         font-size: 1.5rem;
     }
+    .cars .texts .selected,
+    .cars .texts .not-selected{
+        margin-left: .5rem;
+    }
+    footer{
+        text-align: center;
+        flex-direction: column;
+    }
+    footer .lists .list-1{
+        align-items: center;
+    }
+    footer .lists{
+        margin-bottom: 5rem;
+    }
+    footer .list-3{
+        align-items: center;
+    }
+    footer .list-3 .footer-logo{
+        margin-top: 5rem;
+    }
+    footer a{
+        font-size: 2.2rem;
+    }
+    footer .list-3 h2{
+        font-size: 2.2rem;
+    }
 }
-
+@media (max-width: 400px){
+    .cars .texts h1{
+        font-size: 4rem;
+    }
+    .cars .texts .select-control{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cars .texts .selected,
+    .cars .texts .not-selected{
+        font-size: 1.4rem;
+    }
+}
 @media (max-width: 350px){
     .car-logos .logos .logo img{
         width: 4.5rem;
@@ -404,17 +797,23 @@ section{
         width: 100%;
     }
     .home .information-text p,
-    .about .information-text p{
+    .about .information-text p,
+    .cars .texts p,
+    .features .texts p{
         font-size: 1.7rem;
         width: 100%;
     }
     .about .information-text{
         left: 0;
     }
+    .cars .texts h1{
+    }
+    .features .features-list .item{
+        width: 80%;
+    }
 }
 @media (max-width: 300px){
     html{
         font-size: 43.5%;
     }
-    .home .information-text 
 }
