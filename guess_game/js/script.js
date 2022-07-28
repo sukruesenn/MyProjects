@@ -39,8 +39,6 @@ function attemptsControl(){
     document.querySelector(".attempts-left span").textContent = attempsLeft + ' ';
 }
 
-console.log(secretNumber);
-
 function successfulGuess(){
     header.style.backgroundColor = "#83CE73";
     header.style.borderBottom = "0";
@@ -78,6 +76,3 @@ function attemptsFinish(){
 function reloadPage(){
     window.location.reload();
 }
-
-
-
