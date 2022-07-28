@@ -7,7 +7,7 @@
 
 <li> 💬 Ask me about --> HTML, CSS, BOOTSTRAP, JAVASCRIPT, C#</li>
 
-<li> 📫 How to reach me **sukruesenx.off@gmail.com**</li>
+<li> 📫 How to reach me **sukruesenx@gmail.com**</li>
 
 
 
