@@ -1,3 +1,3 @@
 $(function(){
-	$('#header').load('../header.html');
+	$("#dynamic-header").load("./shared/header.html #header");
 });
