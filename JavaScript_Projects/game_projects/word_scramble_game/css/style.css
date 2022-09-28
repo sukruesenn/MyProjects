@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+    --primary-color: #0984E3;
+    --white: #fff;
+    --title-color: #000;
+    --dark-gray: #2d3436;
+    --border-bottom: rgba(0, 0, 0, .1);
+    --input-border: rgb(190, 190, 190);
+    --reflesh-btn: #6c757d;
+}
+::selection{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+::-moz-selection{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+.container{
+    background-color: var(--white);
+    border-radius: 5px;
+    width: 450px;
+}
+.container h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 18px 25px;
+    border-bottom: 1px solid var(--border-bottom);
+}
+.container .content{
+    margin: 18px 25px;
+}
+.container .word{
+    font-size: 33px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 24px;
+    text-align: center;
+    margin-right: -24px;
+}
+.container .details{
+    margin-block: 18px;
+}
+.container .details p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.container .details .time b{
+    font-weight: 500;
+}
+.container input{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    padding-inline: 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.container .buttons{
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .buttons button{
+    outline: none;
+    padding-block: 15px;
+    font-size: 17px;
+    color: var(--white);
+    width: 48%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .buttons .reflesh-btn{
+    background-color: var(--reflesh-btn);
+    border: 2px solid var(--reflesh-btn);
+}
+.container .buttons .check-btn{
+    background-color: var(--primary-color);    
+    border: 2px solid var(--primary-color);
+}
+.container .buttons .reflesh-btn:hover{
+    background-color: transparent;
+    color: var(--reflesh-btn);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.container .buttons .check-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 320px;
+    }
+    .container h1{
+        padding-inline: 12px;
+    }
+    .container .content{
+        margin-inline: 12px;
+    }
+    .container .word{
+        font-size: 27px;
+        letter-spacing: 15px;
+        margin-right: -15px;
+    }
+    .container .details p{
+        font-size: 15px;
+    }
+    .container input{
+        font-size: 16px;
+        height: 50px;
+    }
+    .container .buttons button{
+        padding-block: 8px;
+        font-size: 15px;
+    }
+}

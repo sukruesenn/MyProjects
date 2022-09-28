@@ -1,0 +1,15 @@
+Arrays
+
+Dizi olup olmadýðýný denetleme : Array.isArray()
+Dizi sonuna eleman/lar ekleme : push()
+Dizi sonundan eleman silme : pop()
+Dizi baþýna eleman/lar ekleme : unshift()
+Dizi baþýndaki elemaný silme : shift()
+Dizi deðerlerini ayýrma : slice()
+Diziye eleman ekler veya kaldýrýr : splice()
+Dizi deðerlerini ters çevirme : reverse()
+Dizileri birleþtirme : concat()
+Dizileri sýralama : sort()
+Dizi deðerlerini test etme : find()
+
+for döngüsü --> Baþlangýç deðeri; koþul; artýþ
