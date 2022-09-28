@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Sukru</h1>
 <h3 align="center">A passionate and enthusiastic front-end developer from Turkey</h3>
 <br><br>
-<li> 🌱 I’m currently learning --> JavaScript Frameworks, Angular, React...</li>
+<li> 🌱 I’m currently learning --> React.JS...</li>
 
 <li> 👨‍💻 All of my projects are available at [ https://github.com/sukruesenn ]</li>
 
-<li> 💬 Ask me about --> HTML, CSS, BOOTSTRAP, JAVASCRIPT, C#</li>
+<li> 💬 What do i know --> HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP, SASS, C#</li>
 
 <li> 📫 How to reach me **sukruesenx@gmail.com**</li>
 
