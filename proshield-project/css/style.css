@@ -1978,6 +1978,12 @@ h6{
     }
     /* #Header */
     
+    /* Mobile Nav */
+    .mobile-nav{
+        width: 100%;
+    }
+    /* #Mobile Nav */
+    
     /* Hero */
     .hero-image-badge .numbers{
         top: 80%;
