@@ -117,7 +117,7 @@ $('.owl-carousel').owlCarousel({
         0:{
             items: 1
         },
-        425:{
+        390:{
             items: 2,
             margin: 20,
             center: false
