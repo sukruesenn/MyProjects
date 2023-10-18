@@ -325,6 +325,7 @@ h6{
     padding-inline: 30px;
     border-bottom: 1px solid var(--black-transparent);
     margin-bottom: 26px;
+    justify-content: space-between;
 }
 .mobile-nav .mobile-nav-header .header-logo img{
     width: 150px;
@@ -436,7 +437,7 @@ h6{
     background-color: var(--white);
     width: 100%;
     height: 100%;
-    z-index: 90;
+    z-index: 2002;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -1184,9 +1185,6 @@ h6{
 
 @media (max-width: 991px){
     /* Cursor */
-    *{
-        transition: .3s;
-    }
     .main-cursor,
     .main-cursor-outline{
         display: none;
@@ -1194,6 +1192,12 @@ h6{
     /* #Cursor */
 
     /* General */
+    *{
+        transition: .3s;
+    }
+    .row{
+        margin-inline: -5px;
+    }
     h2{
         line-height: 1.2;
     }
@@ -1234,6 +1238,9 @@ h6{
     /* Hero */
     .hero{
         height: auto;
+    }
+    .hero .desc{
+        margin-bottom: 25px;
     }
     .hero-wrapper{
         position: relative;
@@ -1371,7 +1378,7 @@ h6{
     .why-section .col-md-12:first-child{
         order: 1;
         margin-top: 70px;
-        margin-bottom: 150px;
+        margin-bottom: 200px;
     }
     .why-section .why-wrapper{
         left: 50%;
@@ -1689,10 +1696,28 @@ h6{
     /* #Why Section */
 }
 
+@media (max-width: 432px){
+    /* Hero */
+    .hero .desc{
+        margin-bottom: 15px;
+    }
+    .hero .col-md-6:last-child{
+        margin-top: 10px;
+    }
+    /* #Hero */
+}
+
 @media (max-width: 425px){
     /* Header */
     .mobile-nav{
-        width: 100%;
+        width: 300px;
+    }
+    .mobile-nav .mobile-nav-header{
+        height: 100px;
+        padding: 20px;
+    }
+    .mobile-nav .mobile-nav-content > ul > li:not(.heading) > a{
+        padding-inline: 20px;
     }
     /* #Header */
 
@@ -1725,9 +1750,9 @@ h6{
 @media (max-width: 421px){
     /* Insurance Section */
     .insurance-section .box .box-content-wrapper{
-        padding: 20px;
-        gap: 15px;
-        margin-top: -100px;
+        padding: 10px;
+        gap: 0;
+        margin-top: -60px;
     }
     .insurance-section .box .box-content-wrapper .box-content-icon{
         margin-bottom: 5px;
@@ -1775,6 +1800,15 @@ h6{
         bottom: 10px;
     }
     /* #Why Section */
+}
+@media (max-width: 389px){
+    /* Insurance Section */
+    .insurance-section .box .box-content-wrapper{
+        padding: 20px;
+        gap: 15px;
+        margin-top: -100px;
+    }
+    /* #Insurance Section */
 }
 @media (max-width: 388px){
     /* Why Section */
@@ -1873,6 +1907,18 @@ h6{
     /* #Why Section */
 }
 
+@media (max-width: 330px){
+    /* Hero */
+    .hero .buttons{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .search-agent-btn{
+        margin-left: 0;
+    }
+    /* #Hero */
+}
+
 @media (max-width: 320px){
     /* Header */
     .header-logo .header-bar{
@@ -1887,13 +1933,6 @@ h6{
     /* #Header */
     
     /* Hero */
-    .hero .buttons{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .search-agent-btn{
-        margin-left: 0;
-    }
     .hero .col-md-6:last-child{
         margin-bottom: 20px;
     }
