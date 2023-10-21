@@ -124,3 +124,23 @@ span{
 p{
     color: var(--white);
 }
+
+@media (max-width: 500px){
+    .filters{
+        gap: 15px;
+    }
+    .filters span,
+    .clear-btn,
+    label{
+        font-size: 14px;
+    }
+    .card-header{
+        padding: 15px!important;
+    }
+}
+
+@media (max-width: 425px){
+    .filters{
+        gap: 10px;
+    }
+}
