@@ -1,0 +1,123 @@
+:root{
+    --bg-color: #171723;
+    --black: #24273d;
+    --blue: #3b63cf;
+    --white: #9ea3d3;
+    --border-color: rgba(255, 255, 255, .1);
+    --text-color: rgba(158, 163, 211, .35);
+}
+body{
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+    background-color: var(--black);
+}
+.card-header,
+label{
+    color: var(--white);
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.list-group-item{
+    background-color: var(--black);
+    border-color: var(--border-color);
+}
+
+label.checked{
+    text-decoration: line-through;
+    color: var(--border-color);
+}
+label{
+    margin-left: 5px;
+}
+.filters{
+    gap: 30px;
+}
+.filters span.active{
+    color: var(--blue);
+    font-weight: 700;
+}
+.filters span{
+    cursor: pointer;
+}
+.form-check-input[type=checkbox]{
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+}
+.card-body{
+    padding: 0;
+}
+.input-group .btn{
+    position: absolute;
+    right: 17px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%!important;
+    background: transparent;
+    border: 2px solid var(--border-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.input-group .btn::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: var(--white);
+}
+.input-group input::placeholder{
+    color: var(--border-color);
+}
+.input-group input{
+    background-color: transparent;
+    border-radius: 25px!important;
+    border: none;
+    height: 60px;
+    z-index: 1;
+}
+.form-control:focus{
+    background-color: transparent;
+    color: var(--white);
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.clear-btn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+}
+span{
+    color: var(--text-color);
+}
+.btn-link{
+    color: var(--blue);
+}
+.dropdown-menu.show{
+    background-color: var(--blue);
+    border: none;
+    padding-block: 0;
+}
+.dropdown-menu.show li a{
+    padding-block: 10px;
+}
+.dropdown-item:focus,
+.dropdown-item:hover{
+    background-color: transparent;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color: transparent;
+    outline: none;
+    border-color: var(--border-color);
+}
