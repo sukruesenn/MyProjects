@@ -121,3 +121,6 @@ span{
     outline: none;
     border-color: var(--border-color);
 }
+p{
+    color: var(--white);
+}
