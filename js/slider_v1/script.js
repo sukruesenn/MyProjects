@@ -65,7 +65,7 @@ function init(settings){
             prev = index;
         }else{
             if (models.length == index + 1){
-                index = 0;
+                index = -1;
             }
             showSlide(index);
             index++;
